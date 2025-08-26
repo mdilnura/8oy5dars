@@ -4,6 +4,7 @@ const name = document.getElementById("name") as HTMLSpanElement;
 const userName = document.getElementById("userName") as HTMLSpanElement;
 const joinedAt = document.getElementById("created_at") as HTMLSpanElement;
 const avatar = document.getElementById("avatar") as HTMLImageElement;
+const bio = document.getElementById("bio") as HTMLSpanElement;
 
 export function updateMainUi(user: User) {
   name.textContent = user.name || "Noma'lum";
@@ -11,4 +12,5 @@ export function updateMainUi(user: User) {
   joinedAt.textContent = new Date(user.created_at).toLocaleDateString();
   avatar.src = user.avatar_url;
   avatar.alt = user.name || user.login;
+  bio.textContent = user.bio;
 }
