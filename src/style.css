@@ -1,5 +1,5 @@
 :root {
-  --bg: #f6f8ff;
+  --bg: #141d2f;
   --text: #141d2f;
   --primary: #0079ff;
   --secondary: #fff;
@@ -15,7 +15,7 @@
   --subtitle: rgba(255, 255, 255, 0.75);
 }
 [data-theme="dark"] {
-  --bg: #141d2f;
+  --bg: #f6f8ff;
   --text: #fefefe;
   --primary: #60abff;
   --name: #2b3442;
@@ -55,10 +55,10 @@
 
 body {
   font-family: "Space Mono", sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   display: block;
-  background-color: var(--text);
+  background-color: var(--bg);
   font-weight: 400;
   font-size: 16px;
 }
@@ -177,8 +177,59 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  max-width: 480px;
 }
 .date {
   margin-left: auto;
   color: var(--subtitle);
+}
+ul {
+  list-style: none;
+}
+#reposit {
+  display: flex;
+  gap: 90px;
+  margin-top: 32px;
+  padding-left: 32px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background-color: var(--bg);
+  border-radius: 10px;
+  color: var(--subtitle);
+  margin-bottom: 37px;
+}
+#repos,
+#followers,
+#following {
+  color: var(--name);
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.loca {
+  display: flex;
+  gap: 16px;
+}
+.imgicon {
+  width: 19px;
+  height: 19px;
+}
+.locat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* MEDIA========================= */
+@media screen and (max-width: 378px) {
+  .locat {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
