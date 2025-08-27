@@ -124,7 +124,15 @@ body {
   background-color: transparent;
   text-overflow: ellipsis;
   padding: 12px 16px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary);
+  font-family: "Space Mono", sans-serif;
   width: 100%;
+}
+#searchInput:focus {
+  background-color: transparent;
+  outline: none;
 }
 #searchInput::placeholder {
   font-size: 18px;
@@ -199,6 +207,7 @@ ul {
   width: 100%;
   margin-top: 32px;
   padding-left: 32px;
+  padding-right: 40px;
   padding-bottom: 16px;
   padding-top: 16px;
   background-color: var(--bg);
