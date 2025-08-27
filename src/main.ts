@@ -34,11 +34,11 @@ toggleBtn.addEventListener("click", () => {
 
   if (currentTheme === "light") {
     html.setAttribute("data-theme", "dark");
-    toggleBtn.src = "./public/sun.svg";
-    toggleText.textContent = "LIGHT"; 
+    toggleBtn.src = "./moon.svg";
+    toggleText.textContent = "DARK"; 
   } else {
     html.setAttribute("data-theme", "light");
-    toggleBtn.src = "./public/moon.svg";
-    toggleText.textContent = "DARK"; 
+    toggleBtn.src = "./sun.svg";
+    toggleText.textContent = "LIGHT"; 
   }
 });

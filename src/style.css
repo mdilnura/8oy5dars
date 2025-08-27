@@ -89,6 +89,12 @@ body {
   align-items: center;
   gap: 16px;
 }
+.darkmode span:hover {
+  color: #90a4d4;
+}
+.darkmode img:hover {
+  color: #90a4d4;
+}
 .title {
   font-weight: 700;
   font-size: 26px;
@@ -189,7 +195,8 @@ ul {
 }
 #reposit {
   display: flex;
-  gap: 90px;
+  justify-content: space-between;
+  width: 100%;
   margin-top: 32px;
   padding-left: 32px;
   padding-bottom: 16px;
@@ -220,10 +227,20 @@ ul {
   flex-direction: column;
   gap: 20px;
 }
+#location {
+  color: var(--subtitle);
+}
 .icon {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+a {
+  color: var(--subtitle);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 /* MEDIA========================= */
